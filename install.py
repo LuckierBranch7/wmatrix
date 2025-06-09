@@ -18,8 +18,8 @@ def install_wmatrix():
     
     # Copy files
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    shutil.copy2(os.path.join(script_dir, 'Program.py'), install_dir)
-    shutil.copy2(os.path.join(script_dir, 'wmatrix.bat'), install_dir)
+    shutil.copy2(os.path.join(script_dir, './source/Program.py'), install_dir)
+    shutil.copy2(os.path.join(script_dir, './source/wmatrix.bat'), install_dir)
     
     # Add to PATH
     path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 
